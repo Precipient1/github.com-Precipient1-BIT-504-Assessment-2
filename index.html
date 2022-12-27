@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Haukai Restaurant</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="script.js"></script>
 </head>
 <body>
@@ -10,18 +10,21 @@
     <h1>Haukai Restaurant</h1>
   </header>
   <nav>
-    <button id="book-table-btn" style="background-color: #FFD65D;">Book A Table</button>
-    <button id="menus-btn" style="background-color: #FFD65D;">Menus</button>
-    <button id="about-btn" style="background-color: #FFD65D;">About</button>
-    <button id="hours-btn" style="background-color: #FFD65D;">Open Hours/Contact</button>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menus</a></li>
+        <li><a href="#">Reservations</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
   </nav>
   <div class="home-page">
     <div class="bg-image"></div>
     <div class="text">
       <h2>Welcome to Haukai Restaurant</h2>
       <p>We are a small, family-owned restaurant located in the heart of downtown. Our menu features a variety of dishes inspired by traditional Hawaiian cuisine, as well as a selection of classic American dishes. We strive to use only the freshest ingredients and make everything from scratch. We hope you will join us for a delicious meal and an enjoyable dining experience.</p>
-      <button id="menus-btn" style="background-color: #FFD65D;">View Menus</button>
-      <button id="book-table-btn" style="background-color: #FFD65D;">Book A Table</button>
+      <button a href="menus-btn">View Menus</button>
+      <button a href="book-table-btn">Book A Table</button>
     </div>
   </div>
   <div class="reservation-page" style="display: none;">

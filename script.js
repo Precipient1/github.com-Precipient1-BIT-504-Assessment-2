@@ -35,3 +35,11 @@
     aboutPage.style.display = 'none';
     hoursPage.style.display = 'block';
   });
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+      nav.classList.add('visible');
+    } else {
+      nav.classList.remove('visible');
+    }
+  });
+  
