@@ -41,8 +41,8 @@ form.addEventListener("submit", (e) => {
   if (name === "" || email === "" || phone === "" || date === "" || time === "" || guests === "") 
     {
         alert("Please fill out all required fields.");
-    } 
-    else 
+    }
+    else
     {
     form.submit();
     alert("Reservation submitted successfully!");
