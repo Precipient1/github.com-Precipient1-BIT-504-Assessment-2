@@ -49,3 +49,27 @@ form.addEventListener("submit", (e) => {
     }
 }
 );
+var keriKeriLat = -35.2278;
+var keriKeriLng = 174.3447;
+var keriKeriMarker;
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: restaurantLat, lng: restaurantLng},
+    zoom: 15
+  });
+
+  keriKeriMarker = new google.maps.Marker({
+    position: {lat: keriKeriLat, lng: keriKeriLng},
+    map: map,
+    animation: google.maps.Animation.BOUNCE,
+    icon: "path/to/icon.png"
+  });
+  keriKeriMarker.setTitle("Keri Keri, Bay of Islands, New Zealand");
+  keriKeriMarker.setMap(map);
+}
+google.maps.event.addListener(keriKeriMarker, 'click', function() {
+  var infowindow = new google.maps.InfoWindow({
+    content: "Keri Keri is a small town located in the Bay of Islands, New Zealand. It's known for its beautiful beaches, historic sites, and marine activities."
+  });
+  infowindow.open(map, keriKeriMarker);
+});
