@@ -17,7 +17,7 @@ a:hover {
 
 /* Navigation styles */
 .navbar {
-  background-color: #f8f9fa;
+  background-color: #e7bc50;
 }
 
 .navbar-brand {
@@ -26,13 +26,19 @@ a:hover {
 }
 
 /* Home page styles */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 img {
   max-width: 100%;
+  max-height: fit-content;
 }
 
 /* Reservation page styles */
@@ -66,3 +72,68 @@ label {
   width: 100%;
   height: 600px;
 }
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+/* Styles for the hours-page container */
+.hours-page {
+  padding: 20px;
+}
+
+/* Styles for the heading */
+.hours-page h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for the unordered list */
+.hours-page ul {
+  list-style-type: none; /* remove bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the list items */
+.hours-page li {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Styles for the note */
+.hours-page p {
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+}
+.transparent-btn, #menu-btn {
+  background-color: transparent;
+  border: 2px solid;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  opacity: 0.8;
+  color: whitesmoke;
+}
+.transparent-btn:hover, #menu-btn:hover {
+  color: #ff6f61; /* Hover color */
+}
+.carousel-caption {
+   position: absolute;
+  bottom: none;
+  left: none;
+  right: none;
+  margin: auto;
+}
+

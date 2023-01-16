@@ -73,3 +73,4 @@ google.maps.event.addListener(keriKeriMarker, 'click', function() {
   });
   infowindow.open(map, keriKeriMarker);
 });
+
