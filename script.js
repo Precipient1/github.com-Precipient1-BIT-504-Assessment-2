@@ -42,7 +42,7 @@ form.addEventListener("submit", (e) => {
     {
         alert("Please fill out all required fields.");
     }
-    else
+    else 
     {
     form.submit();
     alert("Reservation submitted successfully!");

@@ -1,89 +1,68 @@
 /* Global styles */
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #222;
-  }
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #0078d7;
-  }
-  /* Navigation styles */
-  .navbar {
-    background-color: #f8f9fa;
-  }
-  .navbar-brand {
-    font-weight: 600;
-    font-size: 20px;
-  }
-  /* Home page styles */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  img {
-    max-width: 100%;
-  }
-  /* Reservation page styles */
-  form {
-    margin-top: 50px;
-  }
-  label {
-    font-weight: 600;
-  }
-  /* Menu page styles */
-  .menu-item {
-    margin-bottom: 30px;
-  }
-  .menu-item img {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
-  /* Contact page styles */
-  #map {
-    width: 100%;
-    height: 400px;
-  }
-  /* Hours page styles */
-  #calendar {
-    width: 100%;
-    height: 600px;
-  }
-  /* Styles for the hours-page container */
-.hours-page {
-  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
 }
 
-/* Styles for the heading */
-.hours-page h1 {
-  font-size: 36px;
+a {
   color: #333;
-  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0078d7;
+}
+
+/* Navigation styles */
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Home page styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Reservation page styles */
+form {
+  margin-top: 50px;
+}
+
+label {
+  font-weight: 600;
+}
+
+/* Menu page styles */
+.menu-item {
+  margin-bottom: 30px;
+}
+
+.menu-item img {
+  width: 100%;
+  max-width: 300px;
   margin-bottom: 20px;
 }
 
-/* Styles for the unordered list */
-.hours-page ul {
-  list-style-type: none; /* remove bullet points */
-  margin: 0;
-  padding: 0;
+/* Contact page styles */
+#map {
+  width: 100%;
+  height: 400px;
 }
 
-/* Styles for the list items */
-.hours-page li {
-  font-size: 24px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-/* Styles for the note */
-.hours-page p {
-  font-size: 18px;
-  color: #999;
-  text-align: center;
+/* Hours page styles */
+#calendar {
+  width: 100%;
+  height: 600px;
 }
