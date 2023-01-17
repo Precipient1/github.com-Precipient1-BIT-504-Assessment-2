@@ -11,11 +11,6 @@
   }
 }
 
-html{
-  height: 100%;
-  width: 100%;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -23,7 +18,7 @@ html{
 /* Global styles */
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   color: #222;
 }
@@ -40,52 +35,35 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Satisfy", cursive;
 }
 
-.header h1 {
-  padding-top: 5px;
-  font-size: 50%;
-  font-family: "Poppins", sans-serif;
-}
-
 .header {
- background-color: #ffb03b;
+  position: flex;
+ color: #ffb03b;
  z-index: -1;
- padding: 5px;
+ padding: 0.5em;
  font-family: "Poppins", sans-serif;
- text-align: right;
- font-size: 25px;
+ font-size: 20px;
 }
 
-#navbarNav {
-  top: 0;
+.navbar-brand {
+  font-family: 'Satisfy', cursive;
+  position: relative;
   width: 100%;
-  z-index: 999;
-  background-color: transparent;
-  background: transparent;
-  padding: 1em;
-  margin: 0;
+  height: 100%;
+  margin-left: 10px;
 }
 
-/* Navigation styles */
-#navbarNav.navbar-transparent {
-  background: transparent;
-}
-
-#navbarNav.navbar-scrolled {
-  top: 20px;
-}
-
-.navbarNav {
+.navbar {
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
   font-family: "Poppins", sans-serif;
 }
 
 .nav-link {
-  color: #ffb03b;
-}
-
-.navbar-brand {
-  font-weight: 600;
-  font-size: 50px;
-  font-family: "Satisfy", cursive;
+  position: relative;
 }
 
 ul {
@@ -97,10 +75,11 @@ container, .container-fluid, .container-lg, .container-md, .container-sm, .conta
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
+  padding-right: calc(var(--bs-gutter-x) * 0);
+  padding-left: calc(var(--bs-gutter-x) * 0);
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 
 img {
@@ -187,29 +166,85 @@ label {
   color: #999;
   text-align: center;
 }
-.transparent-btn, #menu-btn {
+#reservations-btn-2, #reservations-btn-3, #reservations-btn-4, #menu-btn, #menu-btn-1, #menu-btn-2, #menu-btn-3 {
+  white-space: nowrap;
   background-color: transparent;
-  border: 2px solid;
-  padding: 10px 15px;
+  border: 5px solid;
+  border-color: #ffb03b;
+  border-radius: 20px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 18px;
   margin: 4px 2px;
   cursor: pointer;
   opacity: 0.8;
-  color: whitesmoke;
+  color: white;
   width: 80%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
+#reservations-btn-1 {
+  white-space: nowrap;
+  background-color: transparent;
+  border: 5px solid;
+  border-color: #ffb03b;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  opacity: 0.8;
+  color: rgb(85, 85, 85);
+  width: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  .carousel-caption h1 {
+      font-size: 36px;
+  }
+  .carousel-caption p {
+      font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+      font-size: 28px;
+  }
+  .carousel-caption p {
+      font-size: 18px;
+  }
+  .carousel-caption-container {
+      padding: 10px;
+  }
+}
+
 .transparent-btn:hover, #menu-btn:hover {
   color: #ff6f61; /* Hover color */
 }
 .carousel-caption {
+  width: auto;
+  height: auto;
    position: absolute;
-  bottom: 10%;
-  left: 10%;
-  right: 10%;
+   font-size: 125%;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px;
+   background-color: rgba(0, 0, 0, 0.5);
   margin: auto;
+  margin-bottom:2em;
 }
 .caption-heading {
   font-size: 2.4em;
@@ -224,28 +259,24 @@ label {
 
 .leftcolumn {
   float: left;
-  width: 75%;
+  width: 100%;
   background-color: #616060;
-  align-self: center;
   text-align: center;
 }
 
 /* Right column */
 .rightcolumn {
   float: right;
-  width: 25%;
-  background-color: #616060;
+  width: 50%;
+  background-color: #ffb03b;
   padding-left: 20px;
+  color: #fff;
 }
 card {
   background-color: #ffb03b;
   padding: 20px;
   margin-top: 100px;
   margin-bottom: 100%;
-}
-row:after {
-  content: "";
-  display: table;
 }
 
 .back-to-top {
@@ -260,10 +291,6 @@ row:after {
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -272,6 +299,26 @@ row:after {
 
 .text {
   top: 100px;
+}
+
+.menu-page {
+  background-image: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Menu.jpg");
+  background-size: cover;
+}
+
+.reservations-page {
+  background-image: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Reservations.jpg");
+  background-size: cover;
+}
+
+.hours-page {
+  background-image: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Hours.jpg");
+  background-size: cover;
+}
+
+.contact-page {
+  background-image: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Contact.jpg");
+  background-size: cover;
 }
 
 /* Footer */
