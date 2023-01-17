@@ -52,17 +52,19 @@ form.addEventListener("submit", (e) => {
 var keriKeriLat = -35.2278;
 var keriKeriLng = 174.3447;
 var keriKeriMarker;
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: restaurantLat, lng: restaurantLng},
     zoom: 15
   });
+  window.addEventListener('load', initMap);
 
   keriKeriMarker = new google.maps.Marker({
     position: {lat: keriKeriLat, lng: keriKeriLng},
     map: map,
     animation: google.maps.Animation.BOUNCE,
-    icon: "path/to/icon.png"
+    icon: "C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\location icon.gif"
   });
   keriKeriMarker.setTitle("Keri Keri, Bay of Islands, New Zealand");
   keriKeriMarker.setMap(map);
