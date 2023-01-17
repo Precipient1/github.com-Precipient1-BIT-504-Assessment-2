@@ -53,12 +53,17 @@ var keriKeriLat = -35.2278;
 var keriKeriLng = 174.3447;
 var keriKeriMarker;
 
+window.addEventListener('load', initMap);
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: restaurantLat, lng: restaurantLng},
+    center: {lat: keriKeriLat, lng: keriKeriLng},
     zoom: 15
   });
-  window.addEventListener('load', initMap);
+
+  function handleError(){
+    document.getElementById("map-error").innerHTML = "An error occurred while loading the map. Please try again later.";
+  }
 
   keriKeriMarker = new google.maps.Marker({
     position: {lat: keriKeriLat, lng: keriKeriLng},

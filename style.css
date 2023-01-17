@@ -1,7 +1,21 @@
+@media (max-width: 600px) {
+  body {
+      background-size: auto;
+  }
+}
+
+/* Styles for screens with a width of 768px or more */
+@media (min-width: 768px) {
+  body {
+      background-size: cover;
+  }
+}
+
 html{
   height: 100%;
   width: 100%;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -33,7 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
- background-color: rgba(255, 255, 255, 0.5);
+ background-color: #ffb03b;
+ z-index: -1;
  padding: 5px;
  font-family: "Poppins", sans-serif;
  text-align: right;
@@ -56,11 +71,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navbarNav.navbar-scrolled {
-  top: 40px;
+  top: 20px;
 }
 
 .navbarNav {
   font-family: "Poppins", sans-serif;
+}
+
+.nav-link {
+  color: #ffb03b;
 }
 
 .navbar-brand {
@@ -86,7 +105,7 @@ container, .container-fluid, .container-lg, .container-md, .container-sm, .conta
 
 img {
   max-width: 100%;
-  max-height: fit-content;
+  height: auto;
 }
 
 /* Reservation page styles */
@@ -111,13 +130,12 @@ label {
 
 /* Contact page styles */
 #map {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  max-width: 800px;
-  top: 50px;
+  position: auto;
+  height: auto;
+  max-width: 100%;
+  top: 0;
   bottom: 0;
-  left: 200px;
+  left: 400px;
   right: 0;
 }
 
@@ -127,7 +145,9 @@ label {
   height: 600px;
 }
 .container {
-  display: grid;
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: space-between;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-column-gap: 20px;
@@ -206,6 +226,8 @@ label {
   float: left;
   width: 75%;
   background-color: #616060;
+  align-self: center;
+  text-align: center;
 }
 
 /* Right column */
@@ -216,9 +238,10 @@ label {
   padding-left: 20px;
 }
 card {
-  background-color: white;
+  background-color: #ffb03b;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 100px;
+  margin-bottom: 100%;
 }
 row:after {
   content: "";
@@ -237,6 +260,14 @@ row:after {
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 
 .text {
@@ -245,9 +276,13 @@ row:after {
 
 /* Footer */
 .footer {
+  background: #333;
+  color: #fff;
+  padding: 1em;
   padding: 20px;
   font-family: 'Courgette', cursive;
   text-align: center;
   background: #ffb03b;
-  margin-top: 20px;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
