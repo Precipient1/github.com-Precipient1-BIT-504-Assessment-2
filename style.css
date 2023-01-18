@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #333333;
+  background-color: #f5f5f5;
+}
 @media (max-width: 600px) {
   body {
       background-size: auto;
@@ -9,18 +23,6 @@
   body {
       background-size: cover;
   }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Global styles */
-body {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #222;
 }
 
 a {
@@ -233,18 +235,28 @@ label {
 .transparent-btn:hover, #menu-btn:hover {
   color: #ff6f61; /* Hover color */
 }
+.carousel-item {
+  margin: auto;
+  padding: auto;
+}
+
+.carousel-inner {
+  margin: auto;
+  padding: auto;
+}
 .carousel-caption {
-  width: auto;
+  justify-content: space-between;
+  width: 100%;
   height: auto;
-   position: absolute;
+   position: relative;
    font-size: 125%;
    bottom: 0;
    left: 0;
    width: 100%;
-   padding: 20px;
+   padding: 15px;
    background-color: rgba(0, 0, 0, 0.5);
-  margin: auto;
-  margin-bottom:2em;
+  margin: 0;
+  margin-bottom:5em;
 }
 .caption-heading {
   font-size: 2.4em;
@@ -255,6 +267,7 @@ label {
   font-size: 1em;
   padding-bottom: 5px;
 }
+
 
 
 .leftcolumn {
@@ -302,34 +315,37 @@ card {
 }
 
 .menu-page {
-  background-image: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Menu.jpg");
+  background: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Menu.jpg") no-repeat center center/cover;
   background-size: cover;
 }
 
 .reservations-page {
-  background-image: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Reservations.jpg");
+  background: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Reservations.jpg") no-repeat center center/cover;
   background-size: cover;
 }
 
 .hours-page {
-  background-image: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Hours.jpg");
+  background: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Hours.jpg") no-repeat center center/cover;
   background-size: cover;
 }
 
 .contact-page {
-  background-image: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Contact.jpg");
+  background: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Contact.jpg") no-repeat center center/cover;
   background-size: cover;
 }
 
 /* Footer */
 .footer {
-  background: #333;
-  color: #fff;
+  justify-content: space-between;
+  color: #ffb03b;
   padding: 1em;
   padding: 20px;
   font-family: 'Courgette', cursive;
   text-align: center;
-  background: #ffb03b;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.footer a {
+  color: #ffff;
 }
