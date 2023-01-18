@@ -168,7 +168,7 @@ label {
   color: #999;
   text-align: center;
 }
-#reservations-btn-2, #reservations-btn-3, #reservations-btn-4, #menu-btn, #menu-btn-1, #menu-btn-2, #menu-btn-3 {
+#reservations-btn-2, #reservations-btn-3, #menu-btn, #menu-btn-1, #menu-btn-2, #menu-btn-3 {
   white-space: nowrap;
   background-color: transparent;
   border: 5px solid;
@@ -189,7 +189,7 @@ label {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-#reservations-btn-1 {
+#reservations-btn {
   white-space: nowrap;
   background-color: transparent;
   border: 5px solid;
@@ -268,7 +268,9 @@ label {
   padding-bottom: 5px;
 }
 
-
+.p1 {
+  margin-top: 40px;
+}
 
 .leftcolumn {
   float: left;
